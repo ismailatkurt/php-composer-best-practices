@@ -1,0 +1,30 @@
+{
+    "name": "ismailatkurt/php-composer-best-practices",
+    "description": "Php Example Composer Usage with Best Practices",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ismail Atkurt",
+            "email": "ismail.atkurt@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "slim/slim": "^3.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Acme\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acme\\UnitTests\\": "tests/unittests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.3",
+        "fzaninotto/faker": "^1.8"
+    }
+}
